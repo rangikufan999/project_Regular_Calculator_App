@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Calculator App</title>
+	    <!-- Compiled and minified CSS -->
+    	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    	<link rel="stylesheet" href="stylesheets/styles.css">
+   		<!-- Compiled and minified JavaScript -->
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    	<script src="scripts/calculator.js"></script>
+	</head>
+	<body>
+		<div class="card calculator">
+			<div class="row">
+				<div class="display"><span class="error" id="err"></span>
+					<ul class="collection">
+						<li id="input" class="collection-item align-right">0</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row"><div class="waves-effect waves-light btn button" onclick="clearInput()"><p>C</p></div></div>
+			<div class="row"><div class="waves-effect waves-light btn button" onclick="addToString('1')"><p>1</p>
+				</div><div class="waves-effect waves-light btn button" onclick="addToString('2')"><p>2</p>
+				</div><div class="waves-effect waves-light btn button" onclick="addToString('3')"><p>3</p>
+				</div><div class="waves-effect waves-light btn button" onclick="addToString('+')"><p>+</p></div>
+			</div>
+			<div class="row"><div class="waves-effect waves-light btn button" onclick="addToString('4')"><p>4</p>
+				</div><div class="waves-effect waves-light btn button" onclick="addToString('5')"><p>5</p>
+				</div><div class="waves-effect waves-light btn button" onclick="addToString('6')"><p>6</p>
+				</div><div class="waves-effect waves-light btn button" onclick="addToString('-')"><p>-</p></div>
+			</div>
+			<div class="row"><div class="waves-effect waves-light btn button" onclick="addToString('7')"><p>7</p>
+				</div><div class="waves-effect waves-light btn button" onclick="addToString('8')"><p>8</p>
+				</div><div class="waves-effect waves-light btn button" onclick="addToString('9')"><p>9</p>
+				</div><div class="waves-effect waves-light btn button" onclick="addToString('*')"><p>x</p></div>
+			</div>
+			<div class="row"><div class="waves-effect waves-light btn button" onclick="displayResult()"><p>=</p>
+				</div><div class="waves-effect waves-light btn button" onclick="addToString('0')"><p>0</p>
+				</div><div class="waves-effect waves-light btn button" onclick="addToString('.')"><p>.</p>
+				</div><div class="waves-effect waves-light btn button" onclick="addToString('/')"><p>&#247;</p></div>
+			</div>
+			
+			
+		</div>
+	</body>
+</html>
